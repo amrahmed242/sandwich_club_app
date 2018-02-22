@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                tools:context="com.udacity.sandwichclub.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_iv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:alpha="0"
+                android:contentDescription="@string/sandwich_picture_content_description"
+                android:paddingBottom="11dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/mainName_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:text="@string/detail_main_name_label"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mainName_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/alsoknownas_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:text="@string/detail_also_known_as_label"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/also_known_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/placeoforgin_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:text="@string/detail_place_of_origin_label"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/placeoforigin_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/ingrediant_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:text="@string/detail_ingredients_label"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/ingredients_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/desctribtion_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:text="@string/detail_description_label"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/description_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
